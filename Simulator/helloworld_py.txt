@@ -1,0 +1,34 @@
+// Lab 5 Assembly Program
+
+.data
+
+val1: str "hello_world"
+
+.text
+// send text over UART
+ori $r3 $zero 0 // counter for string
+ori $r4 $zero 0 // counter for video memory
+ori $r5 $zero 1 // constant 1
+ori $r6 $zero 4096 // constant for vid mem addr max
+
+// read char, if not zero print it else end
+beg:
+lw $r7 $r3 val1
+beq $r7 $zero loop2
+send $r7
+add $r3 $r3 $r5 // increment char pointer
+j beg 
+
+loop2:
+recv $r8
+add $r4 $zero $zero  
+
+loop3:
+beq $r4 $r6 loop2   
+wpix $r4 $r8 
+add $r4 $r4 $r5 
+j loop3
+
+//end:
+//add $zero $zero $zero
+

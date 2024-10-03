@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Processor.ip_user_files/bd/uproc_top_level/ip/uproc_top_level_xlconcat_0_0/sim/uproc_top_level_xlconcat_0_0.v" \
+"../../../../Processor.ip_user_files/bd/uproc_top_level/ip/uproc_top_level_xlconstant_0_0/sim/uproc_top_level_xlconstant_0_0.v" \
+"../../../../Processor.ip_user_files/bd/uproc_top_level/ip/uproc_top_level_xlconstant_1_0/sim/uproc_top_level_xlconstant_1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

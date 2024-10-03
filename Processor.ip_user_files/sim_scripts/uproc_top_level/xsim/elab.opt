@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uproc_top_level xil_defaultlib.uproc_top_level xil_defaultlib.glbl -log elaborate.log

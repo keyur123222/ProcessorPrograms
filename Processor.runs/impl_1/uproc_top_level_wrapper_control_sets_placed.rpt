@@ -1,0 +1,144 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Oct  2 17:55:59 2024
+| Host         : DESKTOP-4POF9LQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uproc_top_level_wrapper_control_sets_placed.rpt
+| Design       : uproc_top_level_wrapper
+| Device       : xc7z010
+----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    66 |
+|    Minimum number of control sets                        |    66 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    71 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    66 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    49 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             134 |           58 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              77 |           28 |
+| Yes          | No                    | No                     |             170 |           65 |
+| Yes          | No                    | Yes                    |              24 |           12 |
+| Yes          | Yes                   | No                     |             700 |          306 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                 |                            Enable Signal                            |                                   Set/Reset Signal                                   | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                                | uproc_top_level_i/clock_div_25_0/U0/div_BUFG                        |                                                                                      |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/uart_0/U0/t_x/FSM_onehot_current_state[3]_i_1_n_0 | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/rID20                               | uproc_top_level_i/controls_0/U0/rID2[4]_i_1_n_0                                      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/reg1_addr0                          | uproc_top_level_i/controls_0/U0/reg1_addr[4]_i_1_n_0                                 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/rID10                               |                                                                                      |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/clock_div_25_0/U0/div_BUFG                        | uproc_top_level_i/vga_ctrl_0/U0/hcounter                                             |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/send0                               | uproc_top_level_i/controls_0/U0/charSend[7]_i_1_n_0                                  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/uart_0/U0/t_x/shift_reg[7]_i_1_n_0                | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/uart_0/U0/r_x/char[7]_i_1_n_0                     |                                                                                      |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/vga_ctrl_0/U0/hcounter                            | uproc_top_level_i/vga_ctrl_0/U0/vcounter                                             |                3 |             10 |         3.33 |
+|  uproc_top_level_i/clock_div_25_0/U0/div_BUFG |                                                                     | uproc_top_level_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                |                                                                     | uproc_top_level_i/clock_div_0/U0/clear                                               |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/uart_0/U0/r_x/count[2]_i_1_n_0                    | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/fbAddr10                            |                                                                                      |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/pixel_pusher_0/U0/internal_addr                   | uproc_top_level_i/pixel_pusher_0/U0/internal_addr[11]_i_1_n_0                        |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/irAddr0                             | uproc_top_level_i/controls_0/U0/irAddr[13]_i_1_n_0                                   |                2 |             14 |         7.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/dAddr0                              | uproc_top_level_i/controls_0/U0/dAddr[14]_i_1_n_0                                    |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/regwD20                             | uproc_top_level_i/controls_0/U0/regwD2[15]_i_1_n_0                                   |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/regwD10                             |                                                                                      |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/reg3_value0                         |                                                                                      |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/reg2_value0                         |                                                                                      |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/alu_result0                         |                                                                                      |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/fbDout10                            | uproc_top_level_i/controls_0/U0/fbDout1[15]_i_1_n_0                                  |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/dOut[15]_i_1_n_0                    |                                                                                      |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/imm_addr0                           |                                                                                      |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/clock_div_25_0/U0/div_BUFG                        | uproc_top_level_i/pixel_pusher_0/U0/R[7]_i_1_n_0                                     |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[16]_28                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[10]_16                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[11]_20                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[15]_22                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[14]_14                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[12]_15                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[13]_11                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[22]_24                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[17]_9                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[18]_5                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[20]_29                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[1]_1                               | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[19]_3                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[24]_27                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[21]_8                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[23]_2                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[26]_19                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[27]_13                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[25]_12                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[30]_30                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[28]_26                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[29]_10                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[2]_4                               | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[31]_21                             | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[3]_6                               | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[4]_25                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[8]_17                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[6]_18                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[7]_23                              | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[5]_7                               | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/regs_0/U0/regs[9]_0                               | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/pc0                                 |                                                                                      |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/debounce_0/U0/sel                                 | uproc_top_level_i/debounce_0/U0/clear                                                |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/clock_div_0/U0/div                                | uproc_top_level_i/debounce_0/U0/debounced_button                                     |               12 |             24 |         2.00 |
+|  clk_IBUF_BUFG                                |                                                                     | uproc_top_level_i/debounce_0/U0/debounced_button                                     |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/instruction0                        |                                                                                      |               13 |             31 |         2.38 |
+|  uproc_top_level_i/clock_div_25_0/U0/div_BUFG |                                                                     | uproc_top_level_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/SR[0]                     |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                                | uproc_top_level_i/controls_0/U0/aluA0                               | uproc_top_level_i/controls_0/U0/aluA[15]_i_1_n_0                                     |                8 |             36 |         4.50 |
+|  clk_IBUF_BUFG                                |                                                                     |                                                                                      |               32 |             66 |         2.06 |
+|  uproc_top_level_i/clock_div_25_0/U0/div_BUFG |                                                                     |                                                                                      |               26 |             68 |         2.62 |
++-----------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

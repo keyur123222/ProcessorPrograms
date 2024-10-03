@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727394746">
+  <File Type="ROUTE-PWR" Name="HDMI_Tester_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="HDMI_Tester_wrapper.tcl"/>
+  <File Type="BITSTR-MMI" Name="HDMI_Tester_wrapper.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="HDMI_Tester_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="HDMI_Tester_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="HDMI_Tester_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="HDMI_Tester_wrapper_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="HDMI_Tester_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="HDMI_Tester_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="HDMI_Tester_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="HDMI_Tester_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="HDMI_Tester_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="HDMI_Tester_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="HDMI_Tester_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="HDMI_Tester_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="HDMI_Tester_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="HDMI_Tester_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="HDMI_Tester_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="HDMI_Tester_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="HDMI_Tester_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="HDMI_Tester_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="HDMI_Tester_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="HDMI_Tester_wrapper.bin"/>
+  <File Type="PLACE-TIMING" Name="HDMI_Tester_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="HDMI_Tester_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="HDMI_Tester_wrapper.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="HDMI_Tester_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="HDMI_Tester_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="HDMI_Tester_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="HDMI_Tester_wrapper.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="HDMI_Tester_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="HDMI_Tester_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="HDMI_Tester_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="HDMI_Tester_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="HDMI_Tester_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="HDMI_Tester_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="HDMI_Tester_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="HDMI_Tester_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="HDMI_Tester_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="HDMI_Tester_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="HDMI_Tester_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="HDMI_Tester_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="HDMI_Tester_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="HDMI_Tester_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="HDMI_Tester_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="HDMI_Tester_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="HDMI_Tester_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="HDMI_Tester_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="HDMI_Tester_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="HDMI_Tester_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="HDMI_Tester_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="HDMI_Tester_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="HDMI_Tester_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="HDMI_Tester_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="HDMI_Tester_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="HDMI_Tester_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="HDMI_Tester_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="HDMI_Tester_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="HDMI_Tester_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="HDMI_Tester_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="HDMI_Tester_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="HDMI_Tester_wrapper_bd.bmm"/>
+  <File Type="PDI-FILE" Name="HDMI_Tester_wrapper.pdi"/>
+  <File Type="RCFI_FILE" Name="HDMI_Tester_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="HDMI_Tester_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="HDMI_Tester_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="HDMI_Tester_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="HDMI_Tester_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="HDMI_Tester_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="HDMI_Tester_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="HDMI_Tester_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="HDMI_Tester_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="HDMI_Tester_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clock_div_25.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pixel_pusher.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/HDMI_Tester/HDMI_Tester.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/HDMI_Tester/hdl/HDMI_Tester_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_div.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pic.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="HDMI_Tester_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Zybo-Z710.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="HDMI_Tester_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HDMI_Tester_vga_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HDMI_Tester_clock_div_25_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="HDMI_Tester_pixel_pusher_0_0"/>
+</GenRun>

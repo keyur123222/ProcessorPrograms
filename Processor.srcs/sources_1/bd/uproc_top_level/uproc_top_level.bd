@@ -1,0 +1,1192 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF24A5D908B3358D4",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../Processor.gen/sources_1/bd/uproc_top_level",
+      "name": "uproc_top_level",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "irMem": "",
+      "dMem": "",
+      "clock_div_0": "",
+      "clock_div_25_0": "",
+      "rgb2dvi_0": "",
+      "xlconcat_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "debounce_0": "",
+      "regs_0": "",
+      "framebuffer_0": "",
+      "my_alu_0": "",
+      "uart_0": "",
+      "vga_ctrl_0": "",
+      "pixel_pusher_0": "",
+      "controls_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "uproc_top_level_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "RXD": {
+        "direction": "O"
+      },
+      "TXD": {
+        "direction": "I"
+      },
+      "btn_0": {
+        "direction": "I"
+      },
+      "clk_p": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_n": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "data_p": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "data_n": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "CTS": {
+        "direction": "O"
+      },
+      "RTS": {
+        "direction": "O"
+      },
+      "hdmi_tx_hpd": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "irMem": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "uproc_top_level_blk_mem_gen_0_1",
+        "xci_path": "ip\\uproc_top_level_blk_mem_gen_0_1\\uproc_top_level_blk_mem_gen_0_1.xci",
+        "inst_hier_path": "irMem",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../text_fib.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "16384"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "dMem": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "uproc_top_level_blk_mem_gen_0_2",
+        "xci_path": "ip\\uproc_top_level_blk_mem_gen_0_2\\uproc_top_level_blk_mem_gen_0_2.xci",
+        "inst_hier_path": "dMem",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../data.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Read_Width_A": {
+            "value": "16"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "32768"
+          },
+          "Write_Width_A": {
+            "value": "16"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "clock_div_0": {
+        "vlnv": "xilinx.com:module_ref:clock_div:1.0",
+        "xci_name": "uproc_top_level_clock_div_0_0",
+        "xci_path": "ip\\uproc_top_level_clock_div_0_0\\uproc_top_level_clock_div_0_0.xci",
+        "inst_hier_path": "clock_div_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "div": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_div_25_0": {
+        "vlnv": "xilinx.com:module_ref:clock_div_25:1.0",
+        "xci_name": "uproc_top_level_clock_div_25_0_0",
+        "xci_path": "ip\\uproc_top_level_clock_div_25_0_0\\uproc_top_level_clock_div_25_0_0.xci",
+        "inst_hier_path": "clock_div_25_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div_25",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "div": {
+            "direction": "O"
+          }
+        }
+      },
+      "rgb2dvi_0": {
+        "vlnv": "digilentinc.com:ip:rgb2dvi:1.4",
+        "xci_name": "uproc_top_level_rgb2dvi_0_0",
+        "xci_path": "ip\\uproc_top_level_rgb2dvi_0_0\\uproc_top_level_rgb2dvi_0_0.xci",
+        "inst_hier_path": "rgb2dvi_0",
+        "parameters": {
+          "kGenerateSerialClk": {
+            "value": "false"
+          },
+          "kRstActiveHigh": {
+            "value": "true"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "uproc_top_level_xlconcat_0_0",
+        "xci_path": "ip\\uproc_top_level_xlconcat_0_0\\uproc_top_level_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "8"
+          },
+          "IN1_WIDTH": {
+            "value": "8"
+          },
+          "IN2_WIDTH": {
+            "value": "8"
+          },
+          "NUM_PORTS": {
+            "value": "3"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "uproc_top_level_xlconstant_0_0",
+        "xci_path": "ip\\uproc_top_level_xlconstant_0_0\\uproc_top_level_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "uproc_top_level_xlconstant_1_0",
+        "xci_path": "ip\\uproc_top_level_xlconstant_1_0\\uproc_top_level_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1"
+      },
+      "debounce_0": {
+        "vlnv": "xilinx.com:module_ref:debounce:1.0",
+        "xci_name": "uproc_top_level_debounce_0_0",
+        "xci_path": "ip\\uproc_top_level_debounce_0_0\\uproc_top_level_debounce_0_0.xci",
+        "inst_hier_path": "debounce_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "debounce",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "button": {
+            "direction": "I"
+          },
+          "debounced_button": {
+            "direction": "O"
+          }
+        }
+      },
+      "regs_0": {
+        "vlnv": "xilinx.com:module_ref:regs:1.0",
+        "xci_name": "uproc_top_level_regs_0_0",
+        "xci_path": "ip\\uproc_top_level_regs_0_0\\uproc_top_level_regs_0_0.xci",
+        "inst_hier_path": "regs_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "regs",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "id1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "id2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "wr_en1": {
+            "direction": "I"
+          },
+          "wr_en2": {
+            "direction": "I"
+          },
+          "din1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "din2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dout1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "dout2": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "framebuffer_0": {
+        "vlnv": "xilinx.com:module_ref:framebuffer:1.0",
+        "xci_name": "uproc_top_level_framebuffer_0_0",
+        "xci_path": "ip\\uproc_top_level_framebuffer_0_0\\uproc_top_level_framebuffer_0_0.xci",
+        "inst_hier_path": "framebuffer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "framebuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "en1": {
+            "direction": "I"
+          },
+          "en2": {
+            "direction": "I"
+          },
+          "ld": {
+            "direction": "I"
+          },
+          "addr1": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "addr2": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "wr_en1": {
+            "direction": "I"
+          },
+          "din1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dout1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "dout2": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "my_alu_0": {
+        "vlnv": "xilinx.com:module_ref:my_alu:1.0",
+        "xci_name": "uproc_top_level_my_alu_0_0",
+        "xci_path": "ip\\uproc_top_level_my_alu_0_0\\uproc_top_level_my_alu_0_0.xci",
+        "inst_hier_path": "my_alu_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "my_alu",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "OPCODE": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "aluOut": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "uart_0": {
+        "vlnv": "xilinx.com:module_ref:uart:1.0",
+        "xci_name": "uproc_top_level_uart_0_0",
+        "xci_path": "ip\\uproc_top_level_uart_0_0\\uproc_top_level_uart_0_0.xci",
+        "inst_hier_path": "uart_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "uart",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "send": {
+            "direction": "I"
+          },
+          "rx": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "charSend": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "ready": {
+            "direction": "O"
+          },
+          "tx": {
+            "direction": "O"
+          },
+          "newChar": {
+            "direction": "O"
+          },
+          "charRec": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "vga_ctrl_0": {
+        "vlnv": "xilinx.com:module_ref:vga_ctrl:1.0",
+        "xci_name": "uproc_top_level_vga_ctrl_0_0",
+        "xci_path": "ip\\uproc_top_level_vga_ctrl_0_0\\uproc_top_level_vga_ctrl_0_0.xci",
+        "inst_hier_path": "vga_ctrl_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_ctrl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_enable": {
+            "direction": "I"
+          },
+          "hcount": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "vcount": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "vid": {
+            "direction": "O"
+          },
+          "hs": {
+            "direction": "O"
+          },
+          "vs": {
+            "direction": "O"
+          }
+        }
+      },
+      "pixel_pusher_0": {
+        "vlnv": "xilinx.com:module_ref:pixel_pusher:1.0",
+        "xci_name": "uproc_top_level_pixel_pusher_0_0",
+        "xci_path": "ip\\uproc_top_level_pixel_pusher_0_0\\uproc_top_level_pixel_pusher_0_0.xci",
+        "inst_hier_path": "pixel_pusher_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pixel_pusher",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_enable": {
+            "direction": "I"
+          },
+          "vs": {
+            "direction": "I"
+          },
+          "pixel": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "hcount": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vcount": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vid": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "G": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "B": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      },
+      "controls_0": {
+        "vlnv": "xilinx.com:module_ref:controls:1.0",
+        "xci_name": "uproc_top_level_controls_0_0",
+        "xci_path": "ip\\uproc_top_level_controls_0_0\\uproc_top_level_controls_0_0.xci",
+        "inst_hier_path": "controls_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controls",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "uproc_top_level_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "rID1": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "rID2": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "wr_enR1": {
+            "direction": "O"
+          },
+          "wr_enR2": {
+            "direction": "O"
+          },
+          "regrD1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "regrD2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "regwD1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "regwD2": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "fbRST": {
+            "direction": "O"
+          },
+          "fbAddr1": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "fbDin1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "fbDout1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "fbWr_en": {
+            "direction": "O"
+          },
+          "irAddr": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "irWord": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dAddr": {
+            "direction": "O",
+            "left": "14",
+            "right": "0"
+          },
+          "d_wr_en": {
+            "direction": "O"
+          },
+          "dOut": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "dIn": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "aluA": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "aluB": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "aluOp": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "aluResult": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "ready": {
+            "direction": "I"
+          },
+          "newChar": {
+            "direction": "I"
+          },
+          "send": {
+            "direction": "O"
+          },
+          "charRec": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "charSend": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "button_0_1": {
+        "ports": [
+          "btn_0",
+          "debounce_0/button"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "clock_div_25_0/clk",
+          "clock_div_0/clk",
+          "irMem/clka",
+          "dMem/clka",
+          "rgb2dvi_0/SerialClk",
+          "debounce_0/clk",
+          "regs_0/clk",
+          "framebuffer_0/clk1",
+          "my_alu_0/clk",
+          "uart_0/clk",
+          "vga_ctrl_0/clk",
+          "pixel_pusher_0/clk",
+          "controls_0/clk"
+        ]
+      },
+      "clock_div_0_div": {
+        "ports": [
+          "clock_div_0/div",
+          "regs_0/en",
+          "framebuffer_0/en1",
+          "uart_0/en",
+          "controls_0/en"
+        ]
+      },
+      "clock_div_25_0_div": {
+        "ports": [
+          "clock_div_25_0/div",
+          "rgb2dvi_0/PixelClk",
+          "framebuffer_0/en2",
+          "vga_ctrl_0/clk_enable",
+          "pixel_pusher_0/clk_enable"
+        ]
+      },
+      "controls_0_aluA": {
+        "ports": [
+          "controls_0/aluA",
+          "my_alu_0/A"
+        ]
+      },
+      "controls_0_aluB": {
+        "ports": [
+          "controls_0/aluB",
+          "my_alu_0/B"
+        ]
+      },
+      "controls_0_aluOp": {
+        "ports": [
+          "controls_0/aluOp",
+          "my_alu_0/OPCODE"
+        ]
+      },
+      "controls_0_charSend": {
+        "ports": [
+          "controls_0/charSend",
+          "uart_0/charSend"
+        ]
+      },
+      "controls_0_dAddr": {
+        "ports": [
+          "controls_0/dAddr",
+          "dMem/addra"
+        ]
+      },
+      "controls_0_dOut": {
+        "ports": [
+          "controls_0/dOut",
+          "dMem/dina"
+        ]
+      },
+      "controls_0_d_wr_en": {
+        "ports": [
+          "controls_0/d_wr_en",
+          "dMem/wea"
+        ]
+      },
+      "controls_0_fbAddr1": {
+        "ports": [
+          "controls_0/fbAddr1",
+          "framebuffer_0/addr1"
+        ]
+      },
+      "controls_0_fbDout1": {
+        "ports": [
+          "controls_0/fbDout1",
+          "framebuffer_0/din1"
+        ]
+      },
+      "controls_0_fbRST": {
+        "ports": [
+          "controls_0/fbRST",
+          "framebuffer_0/ld"
+        ]
+      },
+      "controls_0_fbWr_en": {
+        "ports": [
+          "controls_0/fbWr_en",
+          "framebuffer_0/wr_en1"
+        ]
+      },
+      "controls_0_irAddr": {
+        "ports": [
+          "controls_0/irAddr",
+          "irMem/addra"
+        ]
+      },
+      "controls_0_rID1": {
+        "ports": [
+          "controls_0/rID1",
+          "regs_0/id1"
+        ]
+      },
+      "controls_0_rID2": {
+        "ports": [
+          "controls_0/rID2",
+          "regs_0/id2"
+        ]
+      },
+      "controls_0_regwD1": {
+        "ports": [
+          "controls_0/regwD1",
+          "regs_0/din1"
+        ]
+      },
+      "controls_0_regwD2": {
+        "ports": [
+          "controls_0/regwD2",
+          "regs_0/din2"
+        ]
+      },
+      "controls_0_send": {
+        "ports": [
+          "controls_0/send",
+          "uart_0/send"
+        ]
+      },
+      "controls_0_wr_enR1": {
+        "ports": [
+          "controls_0/wr_enR1",
+          "regs_0/wr_en1"
+        ]
+      },
+      "controls_0_wr_enR2": {
+        "ports": [
+          "controls_0/wr_enR2",
+          "regs_0/wr_en2"
+        ]
+      },
+      "dMem_douta": {
+        "ports": [
+          "dMem/douta",
+          "controls_0/dIn"
+        ]
+      },
+      "debounce_0_debounced_button": {
+        "ports": [
+          "debounce_0/debounced_button",
+          "regs_0/rst",
+          "uart_0/rst",
+          "controls_0/rst"
+        ]
+      },
+      "framebuffer_0_dout1": {
+        "ports": [
+          "framebuffer_0/dout1",
+          "controls_0/fbDin1"
+        ]
+      },
+      "framebuffer_0_dout2": {
+        "ports": [
+          "framebuffer_0/dout2",
+          "pixel_pusher_0/pixel"
+        ]
+      },
+      "irMem_douta": {
+        "ports": [
+          "irMem/douta",
+          "controls_0/irWord"
+        ]
+      },
+      "my_alu_0_S": {
+        "ports": [
+          "my_alu_0/aluOut",
+          "controls_0/aluResult"
+        ]
+      },
+      "pixel_pusher_0_B": {
+        "ports": [
+          "pixel_pusher_0/B",
+          "xlconcat_0/In1"
+        ]
+      },
+      "pixel_pusher_0_G": {
+        "ports": [
+          "pixel_pusher_0/G",
+          "xlconcat_0/In2"
+        ]
+      },
+      "pixel_pusher_0_R": {
+        "ports": [
+          "pixel_pusher_0/R",
+          "xlconcat_0/In0"
+        ]
+      },
+      "pixel_pusher_0_addr": {
+        "ports": [
+          "pixel_pusher_0/addr",
+          "framebuffer_0/addr2"
+        ]
+      },
+      "regs_0_dout1": {
+        "ports": [
+          "regs_0/dout1",
+          "controls_0/regrD1"
+        ]
+      },
+      "regs_0_dout2": {
+        "ports": [
+          "regs_0/dout2",
+          "controls_0/regrD2"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Clk_n": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Clk_n",
+          "clk_n"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Clk_p": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Clk_p",
+          "clk_p"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Data_n": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Data_n",
+          "data_n"
+        ]
+      },
+      "rgb2dvi_0_TMDS_Data_p": {
+        "ports": [
+          "rgb2dvi_0/TMDS_Data_p",
+          "data_p"
+        ]
+      },
+      "rx_0_1": {
+        "ports": [
+          "TXD",
+          "uart_0/rx"
+        ]
+      },
+      "uart_0_charRec": {
+        "ports": [
+          "uart_0/charRec",
+          "controls_0/charRec"
+        ]
+      },
+      "uart_0_newChar": {
+        "ports": [
+          "uart_0/newChar",
+          "controls_0/newChar"
+        ]
+      },
+      "uart_0_ready": {
+        "ports": [
+          "uart_0/ready",
+          "controls_0/ready"
+        ]
+      },
+      "uart_0_tx": {
+        "ports": [
+          "uart_0/tx",
+          "RXD"
+        ]
+      },
+      "vga_ctrl_0_hcount": {
+        "ports": [
+          "vga_ctrl_0/hcount",
+          "pixel_pusher_0/hcount"
+        ]
+      },
+      "vga_ctrl_0_hs": {
+        "ports": [
+          "vga_ctrl_0/hs",
+          "rgb2dvi_0/vid_pHSync"
+        ]
+      },
+      "vga_ctrl_0_vcount": {
+        "ports": [
+          "vga_ctrl_0/vcount",
+          "pixel_pusher_0/vcount"
+        ]
+      },
+      "vga_ctrl_0_vid": {
+        "ports": [
+          "vga_ctrl_0/vid",
+          "rgb2dvi_0/vid_pVDE",
+          "pixel_pusher_0/vid"
+        ]
+      },
+      "vga_ctrl_0_vs": {
+        "ports": [
+          "vga_ctrl_0/vs",
+          "rgb2dvi_0/vid_pVSync",
+          "pixel_pusher_0/vs"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "rgb2dvi_0/vid_pData"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "rgb2dvi_0/aRst"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "hdmi_tx_hpd"
+        ]
+      }
+    }
+  }
+}

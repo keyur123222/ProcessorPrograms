@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="uproc_top_level_clock_div_25_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_clock_div_25_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_pixel_pusher_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_pixel_pusher_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_uart_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_uart_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_vga_ctrl_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_vga_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_clock_div_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_clock_div_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_debounce_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_debounce_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_my_alu_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_my_alu_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_rgb2dvi_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_rgb2dvi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_regs_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_regs_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_controls_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_controls_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_framebuffer_0_0_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_framebuffer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_blk_mem_gen_0_1_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_blk_mem_gen_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uproc_top_level_blk_mem_gen_0_2_synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/uproc_top_level_blk_mem_gen_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="uproc_top_level_clock_div_25_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_pixel_pusher_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_uart_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_vga_ctrl_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_clock_div_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_debounce_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_my_alu_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_regs_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_controls_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_framebuffer_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_blk_mem_gen_0_1_synth_1"/>
+		<Parent Id="uproc_top_level_blk_mem_gen_0_2_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/keyur/Documents/Vivado/Processor/Processor.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="uproc_top_level_clock_div_25_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_pixel_pusher_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_uart_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_vga_ctrl_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_clock_div_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_debounce_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_my_alu_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_regs_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_controls_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_framebuffer_0_0_synth_1"/>
+		<Parent Id="uproc_top_level_blk_mem_gen_0_1_synth_1"/>
+		<Parent Id="uproc_top_level_blk_mem_gen_0_2_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

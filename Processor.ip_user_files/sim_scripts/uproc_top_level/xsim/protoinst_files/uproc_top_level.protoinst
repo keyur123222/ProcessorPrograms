@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"uproc_top_level": {
+			"proto_instances": {
+			}
+		}
+	}
+}

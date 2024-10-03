@@ -1,0 +1,28 @@
+.data
+
+val1: str "hello_world"
+
+.text
+ori $r3 $zero 48 //fib(n-2)
+ori $r4 $zero 49 //fib(n-1)
+ori $r5 $zero 0 // loop counter
+ori $r6 $zero 5 //fib limit 10
+ori $r8 $zero 1 // constant 1
+
+fib:
+beq $r5 $r6 end
+
+send $r3
+
+add $r7 $r3 $r4
+
+add $r3 $r4 $zero
+add $r4 $r7 $zero
+
+add $r5 $r5 $r8
+
+j fib
+
+end:
+j end
+
